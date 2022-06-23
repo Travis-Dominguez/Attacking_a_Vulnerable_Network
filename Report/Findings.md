@@ -1,6 +1,6 @@
 ## Reconnaissance 
 
-Using *nmap* ping sweep capabilities a network topology was encountered with the following characteristics:
+Using *nmap's* ping-sweep capabilities, a network topology was encountered with the following characteristics:
 
 ##### CHART
 
@@ -8,10 +8,85 @@ This report will involve further investigation into the security of the Target 1
 
 A SYN scan on Target 1 revealed a website on port 80 and an rpc service on port 111, among other services.
 
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Target_1_Nmap_Scan.png "Target_1_Nmap_Scan")
+
 To learn more about the website a *dirb* scan was conducted. This revealed a wordpress service:
+
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Target_1_Dirb_Results.png "Target_1_Dirb_Results")
 
 A *wpscan* was used to gather more information on the wordpress service. 
 This revealed several usernames: 
+
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Target_1_Wpscan_Results.png "Target_1_Wpscan_Results")
+
+## EXPLOITATION
+
+The discovered usernames allowed a focused brute-force attempt using the publicly-available *Hydra* tool.
+Michael's password was successsfully revealed:
+
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Successful_Hydra_Attack_On_Michael.png "Successful_Hydra_Attack_On_Michael")
+
+
+
+
+
+
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
+
+
+
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
+
+
+
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
+
+
+
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
+
+
+
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
+
+
+
+
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
+
+
+
+
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
+
+
+
+
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
+
+
+
+
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
+
+
+
+
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
+
+
+
+
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
+
+
+
+
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
+
+
+
+
 
 
 
