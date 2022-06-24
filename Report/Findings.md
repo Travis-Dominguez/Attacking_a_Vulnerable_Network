@@ -14,30 +14,29 @@ To learn more about the website a *dirb* scan was conducted. This revealed a wor
 
 ![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Target_1_Dirb_Results.png "Target_1_Dirb_Results")
 
+## Exploitation
+
 A *wpscan* was used to gather more information on the wordpress service. 
 This revealed several usernames: 
 
 ![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Target_1_Wpscan_Results.png "Target_1_Wpscan_Results")
 
-## EXPLOITATION
-
 The discovered usernames allowed a focused brute-force attempt using the publicly-available *Hydra* tool.
-Michael's password was successsfully revealed:
+Michael's password was successsfully revealed as shown below. 
+Note: Steven's credentials were not cracked under a specified time frame.
 
 ![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Successful_Hydra_Attack_On_Michael.png "Successful_Hydra_Attack_On_Michael")
 
-
-
-
-
+Accessing Michael's account revealed a vulnerable mysql database. Credentials for the wordpress database were disovered in plain text. 
 
 ![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
 
-
+Acessing the mysql database revealead a chart with username and password hashes. 
+In particular the password hash of Steven, a known account username, was available.
 
 ![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
 
-
+Steven's password was processed using *john*, a publicly available hash cracking tool.
 
 ![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
 
