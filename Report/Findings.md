@@ -8,7 +8,7 @@ This report will involve further investigation into the security of the Target 1
 
 A SYN scan on Target 1 revealed a website on port 80 and an rpc service on port 111, among other services.
 
-![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Target_1_Nmap_Scan.png "Target_1_Nmap_Scan")
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Target_1_Nmap_Results.png "Target_1_Nmap_Results")
 
 To learn more about the website a *dirb* scan was conducted. This revealed a wordpress service:
 
