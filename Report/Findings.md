@@ -29,7 +29,7 @@ Note: Steven's credentials were not cracked under a specified time frame.
 
 Accessing Michael's account revealed a vulnerable mysql database. Credentials for the wordpress database were disovered in plain text. 
 
-![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Exposed_Wordpress_Hashes.png "Exposed_Wordpress_Hashes")
 
 Acessing the mysql database revealead a chart with username and password hashes. 
 In particular the password hash of Steven, a known account username, was available.
