@@ -36,52 +36,13 @@ In particular the password hash of Steven, a known account username, was availab
 
 ![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Exposed_Wordpress_Hashes.png "Exposed_Wordpress_Hashes")
 
-Steven's password was processed using *john*, a publicly available hash cracking tool.
+Steven's password was processed using *john*, a publicly available hash cracking tool, which revealed his password as "linux4u".
+Examining Steven's account and privileges revealed his sudo access privileges which was used to gain access to root using a python vulnerability.
 
-![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
-
-# "PAGE UNDER CONSTRUCTION"
-
-![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
+![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Steven_Account_Access.png "Steven_Account_Access")
 
 
 
-![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
-
-
-
-
-![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
-
-
-
-
-![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
-
-
-
-
-![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
-
-
-
-
-![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
-
-
-
-
-![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
-
-
-
-
-![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
-
-
-
-
-![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/.png "")
 
 
 
