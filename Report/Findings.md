@@ -10,7 +10,8 @@ A SYN scan on Target 1 revealed a website on port 80 and an rpc service on port 
 
 ![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Target_1_Nmap_Results.png "Target_1_Nmap_Results")
 
-To learn more about the website a *dirb* scan was conducted. This revealed a wordpress service:
+To learn more about the website a *dirb* scan was conducted. 
+This revealed a wordpress service:
 
 ![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Target_1_Dirb_Results.png "Target_1_Dirb_Results")
 
@@ -27,7 +28,8 @@ Note: Steven's credentials were not cracked under a specified time frame.
 
 ![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Successful_Hydra_Attack_On_Michael.png "Successful_Hydra_Attack_On_Michael")
 
-Accessing Michael's account revealed a vulnerable mysql database. Credentials for the wordpress database were disovered in plain text. 
+Accessing Michael's account revealed a vulnerable mysql database. 
+Credentials for the wordpress database were disovered in plain text. 
 
 ![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Wordpress_Login_Credentials.png "Wordpress_Login_Credentials")
 
@@ -37,7 +39,7 @@ In particular the password hash of Steven, a known account username, was availab
 ![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Exposed_Wordpress_Hashes.png "Exposed_Wordpress_Hashes")
 
 Steven's password was processed using *john*, a publicly available hash cracking tool, which revealed his password as "linux4u".
-Examining Steven's account and privileges revealed his sudo access privileges which was used to gain access to root using a python vulnerability.
+Examining Steven's account and privileges revealed python sudo access privileges, which was used to elevate to root, using a python vulnerability.
 
 ![alt-text](https://github.com/Travis-Dominguez/Attacking_a_Vulnerable_Network/blob/main/Images/Steven_Account_Access.png "Steven_Account_Access")
 
